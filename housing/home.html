@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" type="text/css" href="/home.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div id="logo-wrapper">
+            <nav><img id="logo" src="images/airbnb.png"> </nav>
+        </div>
+        <div id="right-menu">
+            <nav>
+                <a href="">Help</a>
+            </nav>
+            <nav><button id="con-btn">Contact</button><i id="con-icon" class="fa-solid fa-user"></i></nav>
+            <nav><button id="con-btn2"><i id="con-icon2" class="fa-solid fa-user"></i></button></nav>
+        </div>
+    </header>
+
+    <div id="con-wrap" class="hide">
+        <nav class="icons"><a href=""><button style="color: blue;">Facebook</button></a><i id="fb" class="fa-brands fa-facebook"></i></nav>
+        <nav class="icons"><a href=""><button style="color: red;">Instagram</button></a><i id="ig" class="fa-brands fa-instagram"></i></nav>
+        <nav class="icons"><a href=""><button style="color: green;">Whatsapp</button></a><i id="wa" class="fa-brands fa-whatsapp"></i></nav>
+    </div>
+
+    <section id="text">
+        <h1>
+            COMFORTABLE AND AFFORDABLE APARTMENTS?<br> WE'VE GOT YOU COVERED AT<i style="color: red;"> AIRBNB</i>
+        </h1>
+    </section>
+
+    <section id="first">
+        <div id="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="homeImages/1-64.jpg"></div>
+                    <div class="swiper-slide"><img src="homeImages/201909810_2612011342433466_2225968577895977589_n.jpg"></div>
+                    <div class="swiper-slide"><img src="homeImages/4547fd55badafbd27fe5f940e2852212.jpg"></div>
+                    <div class="swiper-slide"><img src="homeImages/Simple-modern-house-with-an-amazing-floating-stairs-Architecture-Beast-33-main-min-2-min.jpg"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <div id="gs-btn">
+        <a href="/index.html"><button>Explore</button></a>
+    </div>
+
+    <footer>
+        <div id="loc">
+            <h2>Locations</h2>
+        </div>
+        <div id="foot-wrap">
+            <div id="left-foot">
+                <ul>
+                    <li><a class="loc-list" href="">Apapa</a></li>
+                    <li><a class="loc-list" href="">Agege</a></li>
+                    <li><a class="loc-list" href="">Anthony</a></li>
+                    <li><a class="loc-list" href="">Bayeku</a></li>
+                    <li><a class="loc-list" href="">Ikeja</a></li>
+                    <li><a class="loc-list" href="">Shomolu</a></li>
+                </ul>
+            </div>
+
+            <div id="mid-foot">
+                <ul>
+                    <li><a class="loc-list" href="">Apapa</a></li>
+                    <li><a class="loc-list" href="">Agege</a></li>
+                    <li><a class="loc-list" href="">Anthony</a></li>
+                    <li><a class="loc-list" href="">Bayeku</a></li>
+                    <li><a class="loc-list" href="">Ikeja</a></li>
+                    <li><a class="loc-list" href="">Shomolu</a></li>
+                </ul>
+            </div>
+
+            <div id="right-foot">
+                <ul>
+                    <li><a class="loc-list" href="">Apapa</a></li>
+                    <li><a class="loc-list" href="">Agege</a></li>
+                    <li><a class="loc-list" href="">Anthony</a></li>
+                    <li><a class="loc-list" href="">Bayeku</a></li>
+                    <li><a class="loc-list" href="">Ikeja</a></li>
+                    <li><a class="loc-list" href="">Shomolu</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/917df12a52.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true,
+            },
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
